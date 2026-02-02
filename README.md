@@ -421,7 +421,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - Built on [highway-env](https://github.com/eleurent/highway-env) for simulation
-- Uses [DoWhy](https://github.com/py-why/dowhy) for causal inference
 - Inspired by research in causal reinforcement learning
 
 ## 📞 Contact
