@@ -426,9 +426,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Author**: Your Name
-- **Email**: your.email@example.com
-- **GitHub**: [@imshujaa](https://github.com/imshujaa)
+- **Author**: Shuja ur Rehman
+  **GitHub**: [@imshujaa](https://github.com/imshujaa)
 - **Issues**: [GitHub Issues](https://github.com/imshujaa/Causal-RL-for-autonomous-driving-systems-/issues)
 
 ---
