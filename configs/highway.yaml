@@ -1,0 +1,46 @@
+# Default configuration for CaRLeT experiments
+
+experiment_name: "carlet_highway_default"
+seed: 42
+
+environment:
+  name: "highwayMA-v0"
+  render: false
+
+agent:
+  type: "qtable"
+  learning_rate: 0.1
+  discount: 0.95
+  num_bins: 10
+
+causal:
+  enabled: true
+  discovery_method: "prior_knowledge"
+  rollout_steps: 1
+  simulations: 20
+  num_clusters: 100
+  plan_after: 1
+  actions_to_plan: 1
+  start_planning_at: 50
+  update_model_every: 100
+
+training:
+  episodes: 500
+  repetitions: 10
+  show_every: 1
+  update_every: 10
+  start_epsilon: 1.0
+  end_epsilon: 0.1
+  epsilon_decay_episodes: null  # Will use episodes // 3
+  stop_with_epsilon: true
+  smooth_window: 50
+  ego_model_path: "models/EGO/highway/table_EGO_TRAIN_2000.txt"
+  output_dir: "output"
+  models_dir: "models"
+
+logging:
+  level: "INFO"
+  log_dir: "output/logs"
+  tensorboard: true
+  mlflow: false
+  mlflow_tracking_uri: null

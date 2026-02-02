@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  carlet-train:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      target: production
+    image: carlet:latest
+    container_name: carlet-training
+    volumes:
+      - ../output:/app/output
+      - ../models:/app/models
+      - ../configs:/app/configs
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python -m scripts.train --config configs/highway.yaml
+    restart: unless-stopped
+
+  carlet-dev:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      target: development
+    image: carlet:dev
+    container_name: carlet-dev
+    volumes:
+      - ..:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: bash
+    stdin_open: true
+    tty: true
+
+volumes:
+  output:
+  models:
