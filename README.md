@@ -12,7 +12,7 @@
 - **Causal Discovery**: Automatic discovery of causal relationships in driving scenarios
 - **Counterfactual Planning**: What-if reasoning for robust decision-making
 - **Multi-Agent Environment**: Highway and intersection scenarios with adversarial agents  
-- **Multiple Algorithms**: Q-Learning, DQN, PPO, SAC implementations
+- **Multiple Algorithms**: Q-Learning,CRL Q-Learning, DQN,CRL_DQN, PPO, SAC implementations
 - **Production-Ready**: Professional code structure, testing, CI/CD, Docker support
 - **Experiment Tracking**: Integration with TensorBoard and MLflow
 - **Comprehensive Documentation**: API docs, guides, and examples
